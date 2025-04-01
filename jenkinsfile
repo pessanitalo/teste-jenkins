@@ -1,14 +1,23 @@
-pipeline{
+pipeline {
     agent any
 
-    stages{
-       stage('Build Image'){
-            steps{
-                scrips{
-                     sh "docker version"  // Verifica se o Jenkins pode acessar o Docker
-                     sh "docker images"  // Lista as imagens disponíveis
+    stages {
+        stage('Start') {
+            steps {
+                script {
+                    echo "✅ O Pipeline começou a rodar!"
                 }
             }
-       } 
+        }
+
+        stage('Test Docker Access') {
+            steps {
+                script {
+                    echo "Testando acesso ao Docker..."
+                    sh "docker version"
+                    sh "docker images"
+                }
+            }
+        }
     }
 }
