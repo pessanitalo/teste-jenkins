@@ -5,7 +5,7 @@ pipeline {
         stage('Start') {
             steps {
                 script{
-                    dockerapp = docker.build("italopessan/api-jenkins:latest", '-f /teste-jenkins/teste-jenkins/Dockerfile .')
+                    dockerapp = docker.build("italopessan/api-jenkins:latest", '-f ./teste-jenkins/teste-jenkins/Dockerfile .')
                 }
             }
         }
