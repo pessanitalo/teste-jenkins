@@ -4,8 +4,9 @@ pipeline{
     stages{
        stage('Build Image'){
             steps{
-                scrip{
-                    dockerapp = docker.build("italopessan/teste123:latest", '-f ./teste-jenkins/teste-jenkins/Dockerfile .')
+                scrips{
+                     sh "docker version"  // Verifica se o Jenkins pode acessar o Docker
+                     sh "docker images"  // Lista as imagens disponíveis
                 }
             }
        } 
