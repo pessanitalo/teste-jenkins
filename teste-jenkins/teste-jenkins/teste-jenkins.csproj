@@ -7,7 +7,6 @@
     <RootNamespace>teste_jenkins</RootNamespace>
     <UserSecretsId>7243de90-71f0-42a4-867c-8cfddd54c0e7</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>..\..</DockerfileContext>
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 

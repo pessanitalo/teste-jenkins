@@ -12,10 +12,10 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["teste-jenkins/teste-jenkins/teste-jenkins.csproj", "teste-jenkins/teste-jenkins/"]
-RUN dotnet restore "./teste-jenkins/teste-jenkins/teste-jenkins.csproj"
+COPY ["teste-jenkins/teste-jenkins.csproj", "teste-jenkins/"]
+RUN dotnet restore "./teste-jenkins/teste-jenkins.csproj"
 COPY . .
-WORKDIR "/src/teste-jenkins/teste-jenkins"
+WORKDIR "/src/teste-jenkins"
 RUN dotnet build "./teste-jenkins.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Esta fase é usada para publicar o projeto de serviço a ser copiado para a fase final

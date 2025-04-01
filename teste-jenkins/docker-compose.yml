@@ -2,5 +2,5 @@ services:
   teste-jenkins:
     image: ${DOCKER_REGISTRY-}testejenkins
     build:
-      context: ..
-      dockerfile: teste-jenkins/teste-jenkins/Dockerfile
+      context: .
+      dockerfile: teste-jenkins/Dockerfile
