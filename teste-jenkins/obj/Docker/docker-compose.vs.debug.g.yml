@@ -15,7 +15,7 @@ services:
       - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
       - C:\Users\italo\OneDrive\Área de Trabalho\Projetos\teste-jenkins\teste-jenkins\teste-jenkins:/app:rw
-      - C:\Users\italo\OneDrive\Área de Trabalho\Projetos\teste-jenkins\teste-jenkins\teste-jenkins:/src:rw
+      - C:\Users\italo\OneDrive\Área de Trabalho\Projetos\teste-jenkins:/src:rw
       - C:\Users\italo\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\italo\.nuget\packages:/.nuget/packages:ro
       - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/.nuget/fallbackpackages:ro
