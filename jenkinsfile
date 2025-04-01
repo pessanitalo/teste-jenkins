@@ -4,8 +4,8 @@ pipeline{
     stages{
        stage('Build Image'){
             steps{
-                scrips{
-                    dockerapp = docker.build("italopessan/api-jenkins-02:latest", '-f ./teste-jenkins/teste-jenkins/Dockerfile')
+                scrip{
+                    dockerapp = docker.build("italopessan/teste123:latest", '-f ./teste-jenkins/teste-jenkins/Dockerfile .')
                 }
             }
        } 
