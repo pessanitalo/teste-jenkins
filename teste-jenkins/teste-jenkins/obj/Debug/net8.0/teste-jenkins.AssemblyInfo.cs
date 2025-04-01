@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("teste-jenkins")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87ea7ca3aa4e3f0d88012947e4308f8c67380e4b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddff4dd0a878dc1c5cf0c3c31ad09a2698645e93")]
 [assembly: System.Reflection.AssemblyProductAttribute("teste-jenkins")]
 [assembly: System.Reflection.AssemblyTitleAttribute("teste-jenkins")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

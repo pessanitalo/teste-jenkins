@@ -5,7 +5,7 @@ pipeline{
        stage('Build Image'){
             steps{
                 scrip{
-                    dockerapp = docker.build("italopessan/teste123:latest", '-f ./teste-jenkins/teste-jenkins/Dockerfile .')
+                    dockerapp = docker.build("italopessan/teste123:latest")
                 }
             }
        } 
