@@ -10,7 +10,7 @@ namespace teste_jenkins.Controllers
         [HttpGet]
         public IActionResult teste()
         {
-            return Ok("OK");
+            return Ok("ola mundo");
         }
     }
 }
