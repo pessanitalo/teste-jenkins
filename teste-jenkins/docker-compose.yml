@@ -1,0 +1,6 @@
+services:
+  teste-jenkins:
+    image: ${DOCKER_REGISTRY-}testejenkins
+    build:
+      context: teste-jenkins
+      dockerfile: Dockerfile

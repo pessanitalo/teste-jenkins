@@ -2,9 +2,11 @@ pipeline{
     agent any
 
     stages{
-       stage('inicial'){
+       stage('Build Image'){
             steps{
-                echo 'Iniciando a pipeline'
+                scrips{
+                    dockerapp = docker.build("italopessan/api-jenkins-teste:latest", '-f ./teste-jenkins/teste-jenkins/Dockerfile')
+                }
             }
        } 
     }

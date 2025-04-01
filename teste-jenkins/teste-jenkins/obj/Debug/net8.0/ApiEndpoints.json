@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "teste_jenkins.Controllers.Controller",
+    "Method": "teste",
+    "RelativePath": "api",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
