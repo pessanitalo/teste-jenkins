@@ -9,15 +9,5 @@ pipeline {
                 }
             }
         }
-
-        stage('Test Docker Access') {
-            steps {
-                script {
-                    echo "Testando acesso ao Docker..."
-                    sh "docker version"
-                    sh "docker images"
-                }
-            }
-        }
     }
 }
