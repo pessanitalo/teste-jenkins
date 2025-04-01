@@ -1,6 +1,0 @@
-@teste_jenkins_HostAddress = http://localhost:5059
-
-GET {{teste_jenkins_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
