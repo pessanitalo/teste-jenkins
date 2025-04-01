@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Start') {
             steps {
-                script {
-                    echo "✅ O Pipeline começou a rodar!"
-                }
+                sh 'echo "build da imagem"'
             }
         }
     }
