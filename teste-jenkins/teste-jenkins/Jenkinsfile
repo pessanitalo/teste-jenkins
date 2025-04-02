@@ -5,7 +5,7 @@ pipeline {
         stage('Start') {
             steps {
                 script {
-                    dockerapp = docker.build("italopessan/api-jenkins:latest", ".")
+                    sh("teste")
                 }
             }
         }
