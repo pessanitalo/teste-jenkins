@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Start') {
             steps {
-                script {
-                    sh("teste")
-                }
+                sh 'echo "teste build"'
             }
         }
     }
