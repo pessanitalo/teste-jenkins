@@ -10,7 +10,7 @@ pipeline {
         stage('criando a imagem'){
             steps{
                 script{
-                    dockerapp = docker.build("italopessan/api-jenkins:latest", '-f ./teste-jenkins/teste-jenkins/Dockerfile')
+                    dockerapp = docker.build("italopessan/api-jenkins:latest" .)
                 }
             }
         }// C:\Users\italo\OneDrive\Área de Trabalho\Projetos\teste-jenkins\teste-jenkins\teste-jenkins\Dockerfile  teste-jenkins\teste-jenkins\Jenkinsfile
